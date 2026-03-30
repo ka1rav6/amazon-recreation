@@ -1,0 +1,83 @@
+.main-placeholder {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0;
+  margin: 0;
+  border-bottom: 1px solid rgb(231, 231, 231);
+}
+.image-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 12px;
+  border-right: 1px solid rgb(231, 231, 231);
+  border-bottom: 1px solid rgb(231, 231, 231);
+  background-color: white;
+}
+.card-content {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image-display {
+  width: 170px;
+  height: 170px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+.title {
+  font-size: 14px;
+  text-align: left;
+  width: 100%;
+  min-height: 40px;
+  margin: 5px 0;
+}
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  font-size: 14px;
+  margin: 5px 0;
+}
+.price {
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  margin: 5px 0;
+}
+.add-to-card-button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  background-color: rgb(255, 216, 20);
+  border: 1px solid rgb(252, 210, 0);
+  border-radius: 8px;
+  color: rgb(33, 33, 33);
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+.add-to-card-button:hover {
+  background-color: rgb(223, 188, 17);
+}
+.add-to-card-button:active {
+  box-shadow: none;
+}
+.stars span {
+  color: #f5a623; /* gold */
+  font-size: 16px;
+}
+@media (max-width: 1200px) {
+  .main-placeholder {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 800px) {
+  .main-placeholder {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
