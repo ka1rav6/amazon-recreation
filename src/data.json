@@ -4,43 +4,58 @@
         "title": "Black and Gray Athletic Cotton Socks - 6 Pairs",
         "rating" : 4.5,
         "num": 87,
-        "price" : "10.90"
+        "price" : 10.90
     },
     {
         "image" : "src/assets/basketball.jpg",
         "title" : "Intermediate Size Basketball",
         "rating" : 4,
         "num" : 127,
-        "price" : "20.95"
+        "price" : 20.95
     },
     {
         "image" : "src/assets/adults-plain-cotton-tshirt-2-pack-teal.jpg",
         "title" : "Adults Plain Cotton T-Shirt - 2 Pack",
         "rating" : 4.5,
         "num" : 56,
-        "price" : "7.99"
+        "price" : 7.99
     },
     {
         "image" : "src/assets/black-2-slot-toaster.jpg",
         "title" : "2 Slot Toaster - Black",
         "rating" : 5,
         "num" : 2197,
-        "price" : "18.99"
+        "price" : 18.99
     },
     {
         "image" : "src/assets/6-piece-white-dinner-plate-set.jpg",
         "title" : "6 Piece White Dinner Plate Set",
         "rating" : 4,
         "num" : 37,
-        "price" : "20.67"
+        "price" : 20.67
     },
     {
         "image" : "src/assets/6-piece-non-stick-baking-set.webp",
         "title" : "6-Piece Nonstick, Carbon Steel Oven...",
         "rating" : 4.5,
         "num" : 175,
-        "price" : "34.99"
+        "price" : 34.99
+    },
+    {
+        "image" : "src/assets/plain-hooded-fleece-sweatshirt-yellow.jpg",
+        "title" : "Plain Hooded Fleece Sweatshirt",
+        "rating" : 4.5,
+        "num" : 317,
+        "price" : 24.00
+    },
+    {
+        "image" : "src/assets/luxury-tower-set-6-piece.jpg",
+        "title" : "Luxury Towel Set - Graphite Gray",
+        "rating" : 4.5,
+        "num" : 144,
+        "price" : 35.99
     }
+    
 
 
 ]
