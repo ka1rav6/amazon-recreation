@@ -32,7 +32,7 @@ function Image({ image, title, rating, num, price, setCartNum, cartNum }) {
           <strong>{'$' + price}</strong>
         </p>
       </div>
-      <button 
+      <button
         className="add-to-card-button"
         onClick={() => setCartNum(cartNum + 1)}
       >
@@ -59,39 +59,39 @@ function AllImages({ setCartNum, cartNum }) {
     </>
   );
 }
-function TopNavBar({cartNum}){
-  return(
-    <div className = "whole-bar">
-      <img src= "./src/assets/amazon-logo-white.png" />
-      <div className ="search-container">
-      <input 
-        placeholder = "Search"
-        className = "input-bar"
-      />
-      <button
-        className = "search-button"
-      >
-        <i className="fas fa-search" /> 
-      </button>
+function TopNavBar({ cartNum }) {
+  return (
+    <div className="whole-bar">
+      <img src="./src/assets/amazon-logo-white.png" />
+      <div className="search-container">
+        <input
+          placeholder="Search"
+          className="input-bar"
+        />
+        <button
+          className="search-button"
+        >
+          <i className="fas fa-search" />
+        </button>
 
       </div>
-      <div className = "returns-and-orders">
+      <div className="returns-and-orders">
         Returns & Orders
-        </div>
+      </div>
       <div className="cart-class">
-        <img src = "src/assets/cart-icon.png" />
-        <span className = "cart-item-number"> {cartNum} </span>
-        <span className = "cart-text">Cart</span>
+        <img src="src/assets/cart-icon.png" />
+        <span className="cart-item-number"> {cartNum} </span>
+        <span className="cart-text">Cart</span>
       </div>
     </div>
   )
 }
-function App(){
+function App() {
   let [cartNum, setCartNum] = useState(0);
-  return(
+  return (
     <>
-      <TopNavBar cartNum = {cartNum}/>
-      <div className = "main-placeholder">
+      <TopNavBar cartNum={cartNum} />
+      <div className="main-placeholder">
         <AllImages setCartNum={setCartNum} cartNum={cartNum} />
       </div>
     </>
