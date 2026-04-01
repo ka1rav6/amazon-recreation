@@ -1,0 +1,175 @@
+.main-placeholder {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0;
+  margin: 0;
+  border-bottom: 1px solid rgb(231, 231, 231);
+  width: 100%;
+  margin: 0;
+  /* box-sizing: border-box; */
+  /* padding-bottom: 80px; */
+}
+.image-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 12px;
+  border-right: 1px solid rgb(231, 231, 231);
+  border-bottom: 1px solid rgb(231, 231, 231);
+  padding-bottom: 20px;
+  background-color: white;  
+}
+.card-content {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image-display {
+  width: 170px;
+  height: 170px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+.title {
+  font-size: 14px;
+  text-align: left;
+  width: 100%;
+  min-height: 40px;
+  margin: 5px 0;
+}
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  font-size: 14px;
+  margin: 5px 0;
+}
+.price {
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  margin: 5px 0;
+}
+.add-to-card-button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  background-color: rgb(255, 216, 20);
+  border: 1px solid rgb(252, 210, 0);
+  border-radius: 8px;
+  color: rgb(33, 33, 33);
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+.add-to-card-button:hover {
+  background-color: rgb(223, 188, 17);
+}
+.add-to-card-button:active {
+  box-shadow: none;
+}
+.stars span {
+  color: #f5a623; /* gold */
+  font-size: 16px;
+}
+@media (max-width: 1200px) {
+  .main-placeholder {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 800px) {
+  .main-placeholder {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.whole-bar {
+  display: flex;
+  align-items: center;
+  background-color: #131921;
+  padding: 10px 15px;
+  gap: 15px;
+  color: white;
+  margin:0px;
+}
+
+/* Amazon logo */
+.whole-bar img {
+  height: 30px;
+  cursor: pointer;
+}
+
+/* Search bar container behavior */
+.input-bar {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+  min-width: 0;
+}
+
+/* Search button */
+.search-button {
+  background-color: #febd69;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  flex-shrink: 0;
+}
+
+.search-button i {
+  font-size: 16px;
+}
+
+/* Returns & Orders */
+.returns-and-orders {
+  font-size: 12px;
+  cursor: pointer;
+  line-height: 1.2;
+}
+
+.returns-and-orders::after {
+  content: "\AOrders";
+  white-space: pre;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Cart section */
+.cart-class {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-class img {
+  height: 30px;
+}
+
+/* Cart number bubble */
+.cart-item-number {
+  position: absolute;
+  top: -5px;
+  left: 18px;
+  color: #f08804;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Cart text */
+.cart-text {
+  margin-left: 5px;
+  font-weight: bold;
+}
+.search-container {
+  display: flex;
+  flex: 1;
+  max-width: 600px; 
+}
